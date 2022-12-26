@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#root {
+  width: 100%;
+}
+body {
+  font-size: 20px;
+}
+h1,
+p {
+  font-family: Lato;
+}
+
+header {
+  font-size: 3rem;
+  place-self: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  color: black;
+  display: grid;
+  height: 95vh;
+  grid-template-rows: 1fr 1f 5fr;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.inputFields {
+  background: gainsboro;
+  place-self: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 50rem;
+}
+
+.inputFields * {
+  margin: 10px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.promptRow {
+  margin: 20px 5px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 4px 5px 6px 2px #0000003f;
+}
+@media (min-width: 600px) {
+  .promptRow {
+    margin: 20px auto;
+    max-width: 60%;
+  }
+}
+
+.promptRow:nth-child(even) {
+  background: gainsboro;
+}
+button {
+  align-self: start;
+  justify-self: center;
+}
+
+.substituted {
+  font-weight: bold;
+}
