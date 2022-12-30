@@ -24,7 +24,7 @@ export function DreamBoothPrompter() {
     <main>
       <ToastContainer autoClose={1000} hideProgressBar={true} />
 
-      <header>Salman’s starter DreamBooth prompts!</header>
+      <header>aiavatarim.com Dreambooth Prompt Generator</header>
 
       <div className="inputFields">
         <label>instance prompt</label>
